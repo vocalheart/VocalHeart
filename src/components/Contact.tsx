@@ -357,7 +357,6 @@ export default function Contact() {
                     placeholder="How can we help?"
                   />
                 </motion.div>
-
                 {/* Message */}
                 <motion.div
                   onFocus={() => setFocusedField("message")}
