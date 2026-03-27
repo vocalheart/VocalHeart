@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 import { Menu, X, ChevronRight, ChevronDown } from "lucide-react";
 import { motion, AnimatePresence } from "motion/react";
 import { Link, useLocation } from "react-router-dom";
+import LogoVocalHeart from '../../public/vocalhertlogo.png';
 
 export default function Navbar() {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -51,16 +52,19 @@ export default function Navbar() {
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between">
-          {/* Logo */}
-          <Link to="/" className="flex-shrink-0 flex items-center gap-2">
-            <div className="w-8 h-8 bg-brand-600 rounded-lg flex items-center justify-center">
-              <span className="text-white font-display font-bold text-xl leading-none">
-                V
-              </span>
-            </div>
-            <span className="font-display font-bold text-xl tracking-tight text-gray-900">
+          {/* Logo with Image */}
+          <Link to="/" className="flex-shrink-0 flex items-center gap-3">
+            <img
+              src={LogoVocalHeart}
+              alt="Vocal Heart Logo"
+              className="h-20 w-20 object-contain"
+            />
+            {/* Optional: Keep text beside logo if you want */}
+            {/* 
+            <span className="font-display font-bold text-xl tracking-tight text-gray-900 hidden sm:block">
               Vocal Heart
             </span>
+            */}
           </Link>
 
           {/* Desktop Navigation */}

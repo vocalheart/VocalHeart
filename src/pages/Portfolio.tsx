@@ -15,7 +15,7 @@ export default function Portfolio() {
       category: "Web & Digital Marketing",
       description:
         "A complete digital transformation for Raj Darbar with online ordering and marketing.",
-      image: RajdarbarLogo, // ✅ logo used
+      image: RajdarbarLogo, //  logo used
       link: "https://rdarbar.com/",
     },
     {
@@ -34,7 +34,6 @@ export default function Portfolio() {
       image: ReviewBadhaoLogo,
       link: "https://www.reviewbadhao.com",
     },
-
     // 👇 extra dummy projects (same UI maintain)
     {
       title: "Financial Analytics Dashboard",
@@ -61,7 +60,6 @@ export default function Portfolio() {
         "https://images.unsplash.com/photo-1560518883-ce09059eeffa",
     },
   ];
-
   return (
     <main className="pt-24">
       {/* Header */}
@@ -73,13 +71,10 @@ export default function Portfolio() {
           Explore our successful projects and real client work.
         </p>
       </section>
-
       {/* Portfolio Grid */}
       <section className="py-24 bg-white">
         <div className="max-w-7xl mx-auto px-4">
-
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-
             {projects.map((project, index) => (
               <motion.div
                 key={index}
